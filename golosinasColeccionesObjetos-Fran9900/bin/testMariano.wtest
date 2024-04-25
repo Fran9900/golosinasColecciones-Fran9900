@@ -1,0 +1,14 @@
+import mariano.*
+import golosinas.*
+
+test "Mariano resperta Precios Cuidados" {
+	
+	mariano.comprar(bombon)
+	mariano.comprar(oblea)
+	mariano.comprar(chocolatin)
+	chocolatin.pesoInicial(10)
+	
+	assert.that(mariano.preciosCuidados())
+
+}
+
